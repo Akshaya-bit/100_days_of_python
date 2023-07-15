@@ -1,0 +1,6 @@
+#Band Name generator using lessons from the 1st day of python
+
+print("Welcome to my Band Name Generator")
+city=input("Which city did you grow up in?\n")
+pet=input("What's the name of your first pet?\n")
+print("Your new band name is:\n"+city +" " +pet +"!!")
