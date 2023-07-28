@@ -1,0 +1,81 @@
+import random
+
+#Write your code below this line 👇
+print("What do you choose ?")
+ans=int(input("Type 0 for rock, 1 for paper and 2 for sicssors\n"))
+#your choice
+if ans==0:
+  print("Your choice is rock")
+  print('''
+            _______
+        ---'   ____)
+              (_____)
+              (_____)
+              (____)
+        ---.__(___)
+        ''')
+elif ans==1:
+  print("Your choice is paper")
+  print('''
+            _______
+        ---'   ____)____
+                  ______)
+                  _______)
+                 _______)
+        ---.__________)
+        ''')
+elif ans==2:
+  print("Your choice is sicssors")
+  print('''
+              _______
+          ---'   ____)____
+                    ______)
+                 __________)
+                (____)
+          ---.__(___)
+          ''')
+else:
+  print("Please choose 0 1 or 2")
+#computer choice 
+choice= random.randint(0,2)
+if choice==0:
+  print("computer's choice is rock")
+  print('''
+            _______
+        ---'   ____)
+              (_____)
+              (_____)
+              (____)
+        ---.__(___)
+        ''')
+elif choice==1:
+  print("computer's choice is paper")
+  print('''
+            _______
+        ---'   ____)____
+                  ______)
+                  _______)
+                 _______)
+        ---.__________)
+        ''')
+elif choice==2:
+  print("Computers choice is sicssors")
+  print('''
+              _______
+          ---'   ____)____
+                    ______)
+                 __________)
+                (____)
+          ---.__(___)
+          ''')
+else:
+  print("Computer error")
+#game conclusion 
+if ans==choice:
+  print("You draw")
+elif ans==0 and choice==2 or ans==1 and choice==0 or ans==2 and choice==0:
+  print("you win")
+elif ans==0 and choice==1 or ans==1and choice==2 or ans==2 and choice ==1:
+  print("you lose")
+else:
+  print("Error")
